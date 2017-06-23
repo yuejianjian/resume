@@ -1,0 +1,388 @@
+ @charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+	width:100%;
+	}
+/*简历外部框架*/
+.resume{
+	width:100%;
+	}
+/*简历封面*/
+.resume-title{
+	position:relative;
+	width:100%;
+	}
+.top{
+	width:100%;
+	margin:0 10px;
+	
+	
+	}
+.myIntro{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	}
+.name-1{
+	font-family:cursive,'Lato', sans-serif;
+	font-size:70px;
+	font-weight:400;
+	margin:50px 0 30px;
+	}
+.name-2{
+	font-size:30px;
+	letter-spacing:3px;
+	margin:40px 0;
+	}
+.name-3{
+	
+	
+	line-height:48px;
+	font-size:16px;
+	
+	border-radius:5px;
+	cursor:pointer;
+	margin:5px auto;
+	text-align:center;
+	}
+
+.about-me{
+	display:inline-block;
+	background-color:#2c3e50;
+	color:#fff;
+	width:150px;
+	height:50px;
+	border:1px solid #999;
+	
+	}
+.myworks{
+	display:inline-block;
+	background-color:#FFF;
+	color:#96a3b2;
+	width:150px;
+	height:50px;
+	border:1px solid #999;
+	margin:20px;
+	}
+
+/*简历导航条*/
+#nav-bar{
+	position:fixed;
+	width: 100%;
+    height: 70px;
+    background-color: #2c3e50;
+    color: #f5f5f5;
+	margin:0 auto;
+	z-index:1;
+	}
+.container{
+	float:left;
+	margin:auto 100px;
+	line-height:70px;
+	font-size:30px;
+	}
+.navigation{
+	list-style-type:none;
+	height:auto;
+	
+	}
+.navigation li{
+	float:right;
+	margin:auto 50px;
+	
+	font-size:16px;
+	height:auto;
+	
+	}
+.navigation li a{
+	color:#FFF;
+	}
+/*自我介绍*/
+.job-intension{
+	margin-top:200px;
+	
+	}
+.myself-top hr{
+	height: 4px;
+    width:100px;
+    text-align:center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 80px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+	}
+.myself-top .myself{
+	text-align:center;
+	font-size:30px;
+	line-height:30px;
+	color:#2c3e50;
+	
+	letter-spacing:2px;
+	
+	}
+.myphoto{
+	text-align:center;
+	max-width: 400px;
+    width: 40%;
+    border-radius:50%;
+	}
+.information{
+	text-indent:2em;
+	max-width:850px;
+	margin:20px auto;
+	font-size:14px;
+	font-family:"微软雅黑";
+	}
+	
+/*求职意向*/
+.job-intension{
+	position:relative;
+	}
+.job-photo{
+	width:100%;		
+	}
+.job-1{
+	width:100%;
+	height:300px;
+	position:absolute;
+	bottom:50%;
+	}
+.job-1 hr{
+	height: 4px;
+    width:100px;
+    text-align:center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 80px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+	}
+.job-1 li{
+	width:25%;
+	float:left;
+	text-algin:center;
+	list-style-type:none;
+	display:inline-block;	
+	}
+.job-for{
+	text-align:center;
+	margin:auto;
+	font-size:30px;
+	color:#2c3e50;
+	
+	}
+
+.job-1 li img{
+	display:block;
+	margin:10px auto;
+	}
+.job-text1{
+	color:#E87E04;
+	font-size:16px;
+	font-family:"SimHei";
+	text-align:center;
+	margin:20px auto;
+	}
+.job-text2{
+	margin:auto;
+	width:400px;
+	font-family:"微软雅黑";
+}
+/*作品集*/
+.project-experience{
+	width:100%;
+	}
+.project-title{
+	margin:100px auto;
+	}
+.project-title h1{
+	text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2c3e50;
+    padding: 150px 0 0;
+    letter-spacing:2px;
+	}
+.project-title hr{
+	height: 4px;
+    width:70px;
+    text-align:center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 80px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+	}
+
+.project-title p{
+	text-align:center;
+	margin:60px auto;
+	font-family:"微软雅黑";
+	font-size:16px;
+	}
+
+.bigbox-1{
+	position:relative;
+	float:left;
+	width:25%;
+	}
+.bigbox-2{
+	position:relative;
+	float:left;
+	width:25%;
+	}
+.bigbox-3{
+	position:relative;
+	float:left;
+	width:25%;
+	}
+.bigbox-4{
+	position:relative;
+	display:inline-block;
+	width:25%;
+	}
+.zp-cover{
+	
+	position:absolute;
+	width:300px;
+	color:red;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	
+	display:none;
+    }
+
+.zp-cover h4{
+	
+	font-size:16px;
+	font-weight: 600;
+	text-align:center;
+	}
+.zp-cover p{
+	text-align:center;
+	font-size:14px;
+	margin:auto;
+	}
+.zp-cover img{
+	display:block;
+	margin:10px auto;
+	}
+/*技术掌握*/
+.master-technology{
+	position:relative;
+	margin-bottom:200px;
+	
+	}
+.tech-1{
+	width:100%;
+	
+	}
+.tech-my{
+	position:absolute;
+	top:50%;
+	clear:both;
+	width:100%;
+	color:#2c3e50;
+	}
+.tech-my hr{
+	height: 4px;
+    width:100px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 80px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+	}
+.tech-my h1{
+	
+	text-align:center;
+	
+	
+	}
+
+.tech-1 img{
+	width:100%;
+	margin-top:200px;
+	}
+.tech-my ul{
+	list-style-type:none;
+	}
+.tech-my li{
+	width:25%;
+	float:left;
+	text-align:center;
+	}
+/*我的经历*/
+
+.work-experience h1{
+	text-align:center;
+	}
+.work-experience hr{
+	height: 4px;
+    width:100px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 80px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+	}
+.mywork{
+	clear:both;
+	}
+
+.my-xp li{
+	
+	list-style-type:none;
+	width:33.33%;
+	float:left;
+    }
+.my-xp li p{
+	width:500px;
+	text-align:center;
+	clear:both;
+	font-size:16px;
+	font-family:"微软雅黑";
+	}
+.date-box{
+	clear:both;
+	}
+/*联系我*/
+.contact-way{
+	width:100%;
+	clear:both;
+	margin:200px auto;
+	}
+
+.call-me{	
+	text-align:center;
+		
+	}
+.call-me h1{
+	padding-top:200px;
+		
+	}
+.call-me hr{
+	height: 4px;
+    width:100px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 80px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+	}	
+.my-email{
+	text-align:center;
+	}
+.my-email p{
+	font-size:30px;
+	font-family:cursive,'Lato', sans-serif;
+	}
