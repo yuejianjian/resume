@@ -1,26 +1,30 @@
  @charset "utf-8";
 /* CSS Document */
-body{
+html,body{
 	margin:0;
 	padding:0;
 	background-color:#FFF;
-	width:100%;
+	
 	}
 /*简历外部框架*/
 .resume{
-	width:100%;
+	
 	}
 /*简历封面*/
 .resume-title{
-	position:relative;
-	width:100%;
+	
+	
 	}
+
 .top{
-	width:100%;
-	margin:0 10px;
 	
 	
 	}
+img{
+	
+	width:100%;
+	}
+
 .myIntro{
 	position:absolute;
 	top:50%;
@@ -142,15 +146,17 @@ body{
 /*求职意向*/
 .job-intension{
 	position:relative;
+	width:100%;
 	}
-.job-photo{
+.job-photo img{
 	width:100%;		
 	}
 .job-1{
-	width:100%;
-	height:300px;
 	position:absolute;
-	bottom:50%;
+	width:100%;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);	
 	}
 .job-1 hr{
 	height: 4px;
@@ -162,12 +168,17 @@ body{
     border: 0;
     transition: all 0.5s 0.2s;
 	}
-.job-1 li{
+.job-1 ul{
+	
+	
+	}
+.job-1 ul li{
+	
 	width:25%;
 	float:left;
-	text-algin:center;
+	display:inline-block;
 	list-style-type:none;
-	display:inline-block;	
+		
 	}
 .job-for{
 	text-align:center;
@@ -180,6 +191,7 @@ body{
 .job-1 li img{
 	display:block;
 	margin:10px auto;
+	width:100px;
 	}
 .job-text1{
 	color:#E87E04;
@@ -188,11 +200,12 @@ body{
 	text-align:center;
 	margin:20px auto;
 	}
-.job-text2{
+.job-text2{	
 	margin:auto;
-	width:400px;
+	width:300px;
 	font-family:"微软雅黑";
-}
+	text-align:center;
+	}
 /*作品集*/
 .project-experience{
 	width:100%;
@@ -225,7 +238,9 @@ body{
 	font-family:"微软雅黑";
 	font-size:16px;
 	}
-
+.imgbox{
+	margin:auto 20px;
+	}
 .bigbox-1{
 	position:relative;
 	float:left;
@@ -272,6 +287,8 @@ body{
 .zp-cover img{
 	display:block;
 	margin:10px auto;
+	width:100px;
+	height:100px;
 	}
 /*技术掌握*/
 .master-technology{
