@@ -87,12 +87,19 @@ figure figcaption p{
 	}
 @media screen and (max-width:600px){
 	figure{width:100%;}
+	figure img{
+		width:100%;
+		}
 	}
 @media screen and (min-width:601px) and (max-width:1000px){
 	figure{width:50%;}
-	}
+	figure img{
+		width:100%;
+		}
+	}  
 @media screen and (min-width:1001px){
 	figure{width:33.33%;}
+	
 	}
 /*test1*/
 .test1{background:#2F0000;}
