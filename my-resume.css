@@ -98,9 +98,7 @@ img{
 	letter-spacing:3px;
 	margin:10px 0;
 	}
-.name-3{
-	
-	
+.name-3{		
 	line-height:48px;
 	font-size:16px;
 	
@@ -109,7 +107,11 @@ img{
 	margin:5px auto;
 	text-align:center;
 	}
-
+.name-3 span a{
+	color:#000;
+	text-decoration:none;
+	font-family:"微软雅黑";
+	}
 .about-me{
 	display:inline-block;
 	background-color:#2c3e50;
