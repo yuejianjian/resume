@@ -6,10 +6,25 @@
 <link href="my-Blog.css" rel="stylesheet" type="text/css" />
 <script src="jquery-3.2.1 (1).js"></script>
 <script type="text/javascript">
-$(".music").click(function () {
+
+function audioAutoPlay(id){  
+    var audio = document.getElementById(id),  
+        play = function(){  
+            audio.play();  
+            document.removeEventListener("touchstart",play, false);  
+        };  
+    audio.play();  
+    document.addEventListener("WeixinJSBridgeReady", function () {  
+        play();  
+    }, false);  
+    document.addEventListener('YixinJSBridgeReady', function() {  
+        play();  
+    }, false);  
+    document.addEventListener("touchstart",play, false);  
+}  
+audioAutoPlay('Jaudio');           
            
-           
-        });
+
 
 </script>
 </head>
@@ -19,7 +34,7 @@ $(".music").click(function () {
    <div class="section-1">
        <div class="music">
            <img src="images/music.png" alt="音乐" />
-           <audio class="my-music" autoplay loop hidden="true">
+           <audio class="my-music" id="Jaudio" autoplay loop hidden="true">
                <source src="thz.mp3" type="audio/mpeg" />
                <source src="thz.ogg" type="audio/ogg" />
                Your browser does not support the audio element.
@@ -52,7 +67,7 @@ $(".music").click(function () {
            <li>
            <time datetime="2016-08-15">2016-08-15</time>
            <div class="timeline-content">
-               <h1><a href="file:///C:/Users/jian/Desktop/my-resume/my-resume/resume/lunbotu.html">简单的calc()实现轮播图</a></h1>
+               <h1><a href="https://yuejianjian.github.io/resume/lunbotu.html">简单的calc()实现轮播图</a></h1>
                <div id="lunbo">                  
                    <img src="images/s11.jpg"/>                                                                  
                </div>
