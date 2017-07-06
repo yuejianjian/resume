@@ -71,9 +71,18 @@ figure{
 	}
 figure img{
 	opacity:0.8;
-	transition:all 0.4s;s
-	
+	transition:all 0.4s;s	
 	}
+@media screen and (max-width:600px){	
+	figure img{
+		width:100%;
+		}
+	}
+@media screen and (min-width:601px) and (max-width:1000px){	
+	figure img{
+		width:100%;
+		}
+	} 	
 figure img,p,h1,span,div{
 	transition:all 1s;
 	}
