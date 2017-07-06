@@ -1,0 +1,42 @@
+@media screen and (max-width: 500px) { 
+
+.navigation li a{
+display:none;
+
+}
+}
+@media screen and (max-width: 500px) { 
+
+.top img{
+height:300px;
+}
+}
+@media screen and (max-width: 500px) { 
+.myIntro{
+	margin-top:50px;	
+	}
+.name-1{
+width:400px;
+font-size:30px;
+}
+}
+@media screen and (max-width: 500px) { 
+
+.name-2{
+width:400px;
+font-size:16px;
+text-align:center;
+}
+}
+@media screen and (max-width: 500px) { 
+
+.name-3 span {
+display:block;
+margin:10px auto;
+width:90px;
+height:30px;
+line-height:30px;
+}
+
+}
+

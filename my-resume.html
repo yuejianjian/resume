@@ -1,31 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <title>Web前端工程师简历</title>
 <link href="my-resume.css" rel="stylesheet" type="text/css" />
+
 <script src="jquery-3.2.1 (1).js"></script>
+
 </head>
 
 <body>
 <div class="resume">
 <!--导航条-->
     <div id="nav-bar">
-        <div class="container">我的博客</div>
+        <div class="container">
+        <a href="file:///C:/Users/jian/Desktop/my-resume/my-resume/resume/my-Blog.html">我的博客</a>
+        </div>
         <ul class="navigation">
                 
-                <li><a href="#">联系我</a></li>
-                <li><a href="#">我的经历</a></li>
-                <li><a href="#">技术掌握</a></li>
-                <li><a href="#">作品集</a></li>
-                <li><a href="#">求职意向</a></li>
-                <li><a href="#">关于我</a></li>            
+                <li><a href="#tag-5">联系我</a></li>
+                <li><a href="#tag-4">我的经历</a></li>
+                <li><a href="#tag-3">技术掌握</a></li>
+                <li><a href="#tag-2">作品集</a></li>
+                <li><a href="#tag-1">求职意向</a></li>
+                <li><a href="#tag">关于我</a></li>            
        </ul>         
     </div>
     <!--简历封面-->
     <div class="resume-title">
         <div class="top">
-            <img src="images/c426013e4b67db58d07e1ab1e77b2efa.jpg"/>
+            <img src="images/61ed9de9636696037280c8eaa7db41cd.jpg"/>
         </div>
         <div class="myIntro">
             <h1 class="name-1">Hello,I'm a sunny boy</h1>
@@ -38,9 +43,10 @@
         </div>
     </div>
     <!--自我介绍-->
-    <div class="job-intension">
+    <div class="job-intension" id="tag">
+        <div class="mybox2">
         <div class="myself-top">
-           <h1 class="myself">关于我</h1>
+           <h1>关于我</h1>
            <hr/> 
         </div> 
         <div align="center">       
@@ -49,10 +55,11 @@
          <p class="information">我叫乐坚坚，25岁，坐标武汉，是一名前端工程师。前端是一门有容乃大的行业，我并不是计算机专业出生。大学学的专业是船舶工程技术，毕业后在<a href="http://www.bestwaysh.com/">上海佳豪船舶设计股份有限公司</a>做2年半的船舶设计。在一个机缘巧合的时机我了解了前端这一行业，并深深被前端这门技术所吸引。在强大的兴趣催动下我开始自学前端技术。 今后的职业规划也是朝着Web前端方向发展，目前在学习jQuery框架。</p>
          <p class="information">在武汉从事半年的前端开发工作，大的来说，写过响应式页面，移动端页面，pc端页面。小的来说，ps切图，各种网站页面模式都有涉及。 很感谢<a href="https://zrongsoft.cn.china.cn/">武汉智融科技有限公司</a>对我的培养，让我学到了很多东西。</p>   
     </div>
+</div>
     <!--求职意向-->
-    <div class="job-intension">
+    <div class="job-intension" id="tag-1">
         <div class="job-photo">
-            <img src="images/bj-png.png"/>
+            <img src="images/c426013e4b67db58d07e1ab1e77b2efa.jpg"/>
         </div>
         <div class="job-1">
             
@@ -83,69 +90,51 @@
              </li>           
        </div> 
     </div>
-    <!--项目经验-->
-    <div class="project-experience">
+
+<!--项目经验-->
+    <div class="project-experience" id="tag-2">
         <div class="project-title">
              <h1>作品集</h1>
              <hr/>
              <p>写jq前端功能的时候，我的宗旨是能手写就手写，不依赖插件。手写代码更简洁高效，也更能提升自己技术。</p>
-        </div>   
-        <div class="bigbox-1">
-            <a href="https://www.baidu.com" target="_blank">
-                <div class="imgbox">
-                    <img src="images/01.jpg" alt="作品配图"/>
-                </div>
-           
-                <div class="zp-cover">
+        </div>
+        <div class="fudo">  
+        <figure class="test1">
+            <img src="images/01.jpg" alt="作品配图"/>                          
+                <figcaption>
                     <h4>商城类页面</h4>
                     <p>知名电商商城页面模拟</p>
                     <img src="images/search.png" alt="查看" />
-                </div>
-            </a> 
-        </div>
-   
-        <div class="bigbox-2"> 
-            <a href="https://www.baidu.com" target="_blank">
-                <div class="imgbox">
-                    <img src="images/02.jpg" alt="作品配图"/>
-                </div>
-           
-                <div class="zp-cover">
+                </figcaption>             
+</figure>
+<figure class="test2">
+            <img src="images/02.jpg" alt="作品配图"/>                          
+                <figcaption>
                     <h4>官网类页面</h4>
                     <p>多数据响应式页面，能兼容不同电脑大小的分辨率</p>
-                    <img src="images/search.png" alt="查看" />
-                </div>
-            </a>
-        </div>
-        <div class="bigbox-3">          
-            <a href="https://www.baidu.com" target="_blank">
-                <div class="imgbox">
-                    <img src="images/03.jpg" alt="作品配图"/>
-                </div>
-           
-                <div class="zp-cover">
+                    <img src="images/search.png" alt="查看" />                    
+                </figcaption>             
+        </figure>
+        <figure class="test3">
+            <img src="images/03.jpg" alt="作品配图"/>                          
+                <figcaption>
                     <h4>移动端页面</h4>
                     <p>列表类，兼容安卓，ISO，平板</p>
-                    <img src="images/search.png" alt="查看" />
-                </div>
-            </a> 
-       </div>
-        <div class="bigbox-4">
-            <a href="https://www.baidu.com" target="_blank">
-                <div class="imgbox">
-                    <img src="images/04.jpg" alt="作品配图"/>
-                </div>
-           
-                <div class="zp-cover">
+                    <img src="images/search.png" alt="查看" />                   
+                </figcaption>             
+        </figure>
+        <figure class="test4">
+            <img src="images/04.jpg" alt="作品配图"/>                          
+                <figcaption>
                     <h4>我的技术博客</h4>
                     <p>自己平时的知识点积累</p>
                     <img src="images/search.png" alt="查看" />
-                </div>
-            </a>                        
-        </div>
-    
-    <!--技术掌握-->
-    <div class="master-technology">
+                </figcaption>             
+        </figure> 
+    </div>        
+</div>
+ <!--技术掌握-->
+    <div class="master-technology" id="tag-3">
         
         <div class="tech-1">
             <img src="images/3930b514a12e8cff4435cadf4e0fe910.jpg" />
@@ -173,14 +162,15 @@
             </ul>            
         </div>
         
-    </div>
+    </div>    
     <!--我的工作经历-->
-    <div class="work-experience">
+    <div class="work-experience" id="tag-4">
+    <div class="mybox1">
         <div class="work-top">
             <h1>我的经历</h1>
-            <hr>
+            <hr>           
         </div>
-        <div class="mywork">            
+         <div class="mywork over-flow">            
             <li>                    
                 <p>09/2012-06/2015</p>                                                                  
                 <p><a href="http://www.wspc.edu.cn/">武汉船舶职业技术学院</a></p>
@@ -205,8 +195,11 @@
                 <p>并将代码上传到代码托管平台上。</p>                   
             </li>                                        
         </div>
+        </div>
     </div>
-    <div class="contact-way">
+    
+ <!-- 联系我-->
+    <div class="contact-way" id="tag-5">
         <div class="call-me">
            <h1>联系我</h1>
            <hr/>
@@ -214,16 +207,6 @@
            <p>myemail:929915906@qq.com</p>
         </div>
     </div>
-</div>
-<script type="text/javascript">
-$('.imgbox').hover(
-function(){
-	$('.zp-cover').css('display','block');
-	},
-function(){
-	$('.zp-cover').css('display','none');
-	}
-	)
-</script>
+</div>      
 </body>
 </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抽牌效果之轮播图</title>
+<style type="text/css">
+html,body{
+	margin:0;
+	padding:0;
+	background:#CCC;
+	}
+
+.section-3{
+	width:1000px;
+	
+	margin:100px auto;
+	}	
+.top-blog{
+	text-align:center;
+	}
+.top-blog img{
+	
+	
+	max-width:300px;
+    width: 30%;
+    border-radius:50%;
+	}
+.top-blog h1{
+	margin-top:100px;
+	font-family:cursive,'Lato', sans-serif;
+	font-size:70px;	
+	}
+.top-blog ul{
+	
+	overflow:hidden;
+	margin:0px;
+    padding:0px;
+	display:inline-block;
+	
+	}
+.top-blog ul li{
+	list-style:none;
+	float:left;	
+		
+	}
+.top-blog ul li a{
+	text-decoration:none;
+	color:#666;
+	padding:0 10px; 
+	overflow:hidden;
+	clear:both;
+	}
+/*页面*/
+.lunbo{
+clear:both;
+}
+.lunbo h4{
+	text-align:center;
+	}
+.lunbo p{
+	font-size:16px;
+	font-family:"微软雅黑";
+	}
+.lunbo ul{
+	margin:0px;
+    padding:0px;
+	color:#000
+	}
+	
+
+/*图片轮播*/
+#frame{width:1000px;height:400px;overflow:hidden;border-radius:5px}
+
+#photos img{float:left;width:1000px;height:400px}
+#photos {z-index:9;  width: calc(1000px * 3);/*---修改图片数量的话需要修改下面的动画参数*/  }
+.play{ animation: ma 5s ease-out infinite alternate;}
+@keyframes ma {
+0%,30% {        margin-left: 0px;       }         
+35%,65% {       margin-left: -1000px;    }
+70%,100% {      margin-left: -2000px;    }
+}
+/*输出背景框*/
+.code{
+	width:100%;
+	background:#FFF;
+	}
+</style>
+</head>
+
+<body>
+<div class="section-3">
+       <div class="top-blog">
+           <img src="images/ox.jpg" alt="帅哥"/>
+           <h1>孤鹜恋落霞</h1>
+           <ul>
+               <li><a href="#">简历</a></li>
+               <li><a href="#">生活点滴</a></li>
+               <li><a href="#">留言</a></li>
+           </ul>
+       </div>
+       <div class="lunbo">
+           <h4>抽牌效果之轮播图</h4>
+           <p>banner轮播方式真的很多，这也算一种特别的轮播方式了吧~</p>
+           <p>css3结合jq，炫的都是css3的功劳。</p>
+           <div id = "frame">
+               <div id="photos" class="play">                   
+                       <img src="images/ban1.jpg" alt="banner1" />                   
+                       <img src="images/ban2.jpg" alt="banner2" />                   
+                       <img src="images/ban3.jpg" alt="banner3" />                                                           
+               </div>
+       </div>
+       <h5>CSS:<h5>
+       <div class="code">
+           <pre class="codebox">                
+               /*图片轮播*/
+               #frame{width:1000px;height:400px;overflow:hidden;border-radius:5px}
+               #photos img{float:left;width:1000px;height:400px}
+               #photos {z-index:9;  width: calc(1000px * 3);/*---修改图片数量的话需要修改下面的动画参数*/  }
+               .play{ animation: ma 5s ease-out infinite alternate;}
+               @keyframes ma {
+               0%,30% {        margin-left: 0px;       }         
+               35%,65% {       margin-left: -1000px;    }
+               70%,100% {      margin-left: -2000px;    }
+               }                
+           </pre>
+       </div>
+   </div>
+</body>
+</html>

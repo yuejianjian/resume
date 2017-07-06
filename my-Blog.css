@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background: #fff;
+font-family: "Helvetica Neue", sans-serif;
+margin: 50px;
+}
+
+.music{	
+text-align:center;		
+}
+/*设置背景音乐图片旋转*/
+.music img{	
+	width:100px;
+	height:100px;
+	-webkit-transform:translate3d(0,0,0);
+    -moz-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+/*	-webkit-animation:play 3s linear infinite;
+    -moz-animation:play 3s linear infinite;*/
+    animation:play 3s linear infinite;
+	}
+@-webkit-keyframes play{ /*Safari and Chrome*/
+    0%  {-webkit-transform:rotate(0deg); }
+    100% {-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes play{ /*Firefox*/
+    0%  { -moz-transform:rotate(0deg);}
+    100% {-moz-transform:rotate(360deg);}
+}
+@keyframes play{
+    0%  {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+.top-blog{
+	text-align:center;
+	}
+.top-blog img{
+	
+	margin-top:100px;
+	max-width:500px;
+    width: 50%;
+    border-radius:50%;
+	}
+.top-blog h1{
+	margin-top:100px;
+	font-family:cursive,'Lato', sans-serif;
+	font-size:70px;	
+	}
+.top-blog ul{
+	list-style:none;
+	overflow:hidden;
+	text-align:center;
+	display:inline-block;
+	
+	}
+.top-blog ul li{
+	margin:0 20px;
+	float:left;	
+		
+	}
+.top-blog ul li a{
+	text-decoration:none;
+	color:#666;
+	margin:10px auto;
+	overflow:hidden;
+	display:inline-block;
+	}
+/*我的大学生活*/
+#timeline{
+margin-left: 20%;
+border-left: 10px solid #bce1fa;
+}
+#timeline li{
+position: relative;
+list-style: none;
+display: block;
+width: 100%;
+clear: both;
+margin-bottom:100px;
+}
+#timeline li::before{
+content: '';
+display: block;
+width: 30px;
+height: 30px;
+border: 5px solid #bce1fa;
+border-radius: 50%;
+background: #3498DB;
+position: absolute;
+left: -25px;
+top: 0;
+/*box-sizing: border-box;*/
+}
+#timeline li time{
+position: absolute;
+left: -30%;
+top: 8px;
+width: 25%;
+font-size: 21px;
+color: #AAA;
+text-align: right;
+}
+.timeline-content{
+position: relative;
+margin: 0 0 20px 5%;
+background:#F3C;
+color: #fff;
+border-radius: 4px;
+padding: 30px;
+}
+.timeline-content h1{
+font-size:30px;
+margin-bottom:20px;
+}
+.timeline-content p{
+	margin-top:20px;
+	font-size:16px;
+	font-family:"微软雅黑";
+	text-indent:2em;
+	}
+.timeline-content h1 a{
+	text-decoration:none;
+	}
+.timeline-content::after{
+content:'';
+width: 0;
+height: 0;
+border-width: 10px;
+border-style: solid;
+border-color: transparent #57b4f6 transparent transparent;
+position: absolute;
+left: -20px;
+top: 12px;
+}
+/*图片轮播*/
+#frame{width:300px;height:200px;overflow:hidden;border-radius:5px}
+
+#photos img{float:left;width:300px;height:200px}
+#photos {z-index:9;  width: calc(300px * 5);/*---修改图片数量的话需要修改下面的动画参数*/  }
+.play{ animation: ma 10s ease-out infinite alternate;}
+@keyframes ma {
+
+0%,15% {        margin-left: 0px;       }         
+20%,35% {       margin-left: -300px;    }
+40%,55% {       margin-left: -600px;    }
+60%,75% {       margin-left: -900px;    }
+80%,100% {      margin-left: -1200px;   }
